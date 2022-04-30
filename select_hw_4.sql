@@ -15,6 +15,10 @@ select compilation_name
 from compilation_id ci 
 where compilation_year between 2018 and 2020
 
+select artist_alias 
+from artist_list al
+where artist_alias not like '% %'
+
 select track_name 
 from track_list tl
 where track_name like '%my%' or track_name like '%My%' or track_name like '%Мой%' or track_name like '%мой%'
